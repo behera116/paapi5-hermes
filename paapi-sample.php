@@ -17,10 +17,10 @@ $instance = new ProductLookup($params);
 
 
 //get product information using ASIN list
-$asins = ['B07HGGYWL6'];
+$asins = ['B07HGGYW66','B07HGGYWL6'];
 $items = $instance->getItems($asins);
 print_r($items);
-
+exit();
 
 //Get Breadcrumb of a category using list of Category IDs
 $nodes = ['1805560031','4363894031'];
