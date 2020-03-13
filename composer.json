@@ -15,5 +15,6 @@
         "psr-4": { 
             "Amazon\\ProductAdvertisingAPI\\v1\\" : "src/" 
         }
-    }
+    },
+    "version": "1.0.0"
 }
