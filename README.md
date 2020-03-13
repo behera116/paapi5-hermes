@@ -1,10 +1,10 @@
-#PA-API5 implementation by extending Amazon SDK
+# PA-API5 implementation by extending Amazon SDK
 
 ## Installation
 
 Run the following command using composer
 ```sh
-$ composer require composer require behera116/paapi5-hermes
+$ composer require behera116/paapi5-hermes
 ```
 
 ## Sample Execution
