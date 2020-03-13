@@ -113,15 +113,20 @@ class ProductLookup{
 
         $items = !empty($itemsResult['ItemsResult']['Items'])?$itemsResult['ItemsResult']['Items']:null;
         
-
-        $itemList = null;
-        foreach($items as $index => $item){
-            $asin = $item['ASIN'];
-            $itemList[$asin] = $item;
+        $result = [];
+        if(!empty($itemsResult['Errors'])){
+            $result['Errors'] = $itemsResult['Errors'];
         }
-        
 
-        return $itemList;
+        if(!empty($items)){
+            $itemList = null; 
+            foreach($items as $index => $item){
+                $asin = $item['ASIN'];
+                $itemList[$asin] = $item;
+            }
+            $result['Items'] = $itemList;
+        }
+        return $result;
 
     }
 
