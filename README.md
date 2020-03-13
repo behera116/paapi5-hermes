@@ -11,6 +11,8 @@ $ composer require behera116/paapi5-hermes
 
 ```php
 <?php
+
+//path to behera116/paapi5-hermes 's vendor 
 require_once "vendor/autoload.php";// give absolute path for vendor if not included in include_path
 use Amazon\ProductAdvertisingAPI\v1\com\amazon\paapi5\v1\ProductLookup;
 
